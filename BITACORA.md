@@ -55,11 +55,13 @@ Clicking in the details button opens a new view were you can see the current pri
 There is 2 ways to search.
 
 Searching By ID
+
 ![Search by id.png]([https://your-copied-image-address](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/Search%20by%20id.png?raw=true)
 
 The Searching by id function works with the ID's assigned in the API to the product
 
 Searching by name
+
 ![search by name.png](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/search%20by%20name.png?raw=true)
 
 The search function filters the keywords pressed.
@@ -67,19 +69,22 @@ The search function filters the keywords pressed.
 # Shopping cart
 
 The number of the items in the shopping cart icon updates whenever the user adds a new item
+
 ![cart items.png](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/cart%20items.png?raw=true)
 
 When the shopping cart icon is pressed it opens a new view where it shows the current items in it. 
 
 Empty
+
 ![empty cart.png](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/empty%20cart.png?raw=true)
 
 Full
+
 ![cart full.png](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/cart%20full.png?raw=true)
 
-![cart items.png](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/cart%20items.png?raw=true)
 
 
 If a product isn't in stock it shows a label of 'unaivalaible'  Again, the stock control is feed by the API. 
+
 ![no stock.png](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/no%20stock.png?raw=true)
 

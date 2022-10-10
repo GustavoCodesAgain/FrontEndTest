@@ -56,7 +56,7 @@ There is 2 ways to search.
 
 Searching By ID
 
-![Search by id.png]([https://your-copied-image-address](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/Search%20by%20id.png?raw=true)
+![Search by id.png](https://your-copied-image-address](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/Search%20by%20id.png?raw=true)
 
 The Searching by id function works with the ID's assigned in the API to the product
 

@@ -1,0 +1,8 @@
+.layout {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url("../../images/18410.jpg") center center / cover no-repeat rgb(34, 34, 34);
+}
+

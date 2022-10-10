@@ -1,0 +1,23 @@
+.search {
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.inputSel {
+    width: 50%;
+    height: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: #237fff;
+}
+
+.inputSel::placeholder {
+    color: #237fff;
+}
+
+.selectSearch{
+    margin-right:  10px;
+    color: #000;
+    font-weight: bold;
+}

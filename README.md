@@ -1,87 +1,90 @@
-# Prueba tecnica Front Ecomsur 2021
+### Dependencies required
 
-### Por favor, empezar la prueba después de haber leído este documento completo.
+  "node": ">=6.0.0",
+  "axios": "^0.22.0",
+  "cors": "^2.8.5",
+  "express": "^4.17.1",
+  "react-rating-stars-component": "^2.2.0",
+  "react-router-dom": "^6.4.2",
+  "react-scripts": "^5.0.1"
 
-  - [Requerimientos mínimos](#requerimientos-mínimos)
-  - [Instalar y Correr la aplicación](#instalar-y-correr-la-aplicación)
-  - [Descripción de la prueba](#descripción-de-la-prueba)
-  - [Reglas de entrega](#reglas-de-entrega)
+## Steps to to run the APP
 
-## Requerimientos mínimos
+# Install the app
 
-Node 14.15.0
+1.  Clone the repository in your enviroment via `git clone https://github.com/GustavoCodesAgain/FrontEndTest`. Alternatively you can download the source code. 
 
-## Instalar y Correr la aplicación
+2.  Install NPM in the `root` folder via command line using the command `npm install`
 
-Instalar API (backend) y la aplicacion React (front):
+3.  Install NPM in the `front` folder via command line using the command `npm install`
 
-1. En la carpeta `root` de la aplicacion correr:
-   `npm install`
-2. Navega al directorio `front` y vuelve a correr el comando:
-   `npm install`
-3. Regresa al directorio root `cd ..`.
+4.  Return to the root folder from the command line.
 
-La aplicación está compuesta de un servidor Express y una instalación básica de Create-React-App (CRA). Todo está configurado para correr con un solo comando
-
-`npm run dev`
-
-Esto correrá ambas aplicaciones (Express y CRA) al mismo tiempo.
-
-- CRA se encuentra en:
-  `http://localhost:3000/`
- y se ve de la siguiente forma:
- ![Running app](/running-app.png)
+# Install the required dependencies 
 
 
-- El servidor se encuentra en:
-  `http://localhost:5000/`
+1.Axios `npm install axios`
+2.Cors `npm install cors`
+3.React rating stars `npm install react-rating-stars-component`
+4.React Router DOM `npm install react-router-dom`
+5.React Scripts `npm install react-scripts` 
 
-- La lista de productos se encuentra:
-  `http://localhost:5000/api/products`
 
-- Puedes encontrar cada producto por su ID:
-  `http://localhost:5000/api/products/1`
+## Run the aplication
 
-- Las imágenes se encuentran en:|
-  `http://localhost:5000/images/{{nombre-de-la-imagen}}`
+1. Execute in terminal the dev command 'npm run dev' 
 
-## Descripción de la prueba
+After completing the aboce steps a browser window will open using the CRA APP located in `http://localhost:3000/`
 
-Se requiere implementar un carrito de compras simple que traiga toda la info del API local, éste debe contar con las siguientes secciones:
 
-- Una lista de ítems mostrando el catálogo de productos. (Product List Page)
-- Página de producto mostrando detalle de producto. (Product Display Page)
-- Un carrito de compras que tenga todos los ítems que serán comprados por el usuario. (Cart Page)
-- Espacio donde se muestre la sincronización de los ítems añadidos al carrito. (Mini cart) ![mini cart example](/minicart-example.png)
 
-`Favor de no utilizar "CSS frameworks" como Bootstrap, MUI, Semantic UI, etc. Parte importante de la prueba es ver tu uso de CSS. No es necesario que la prueba tenga un diseño muy complejo, estamos evaluando funcionalidad, no diseño ni uso de colores.`
-`Puedes instalar cualquier Libreria NPM que gustes para facilitar el desarrollo (Axios para llamadas al API, Modals, transiciones, etc..)`
+### Screen views
 
-#### Las reglas del negocio son:
+# Product Page
 
-- Cada ítem del catálogo debe tener un action button con el texto `Add item to cart`.
-- Si no hay stock el `action button` debe deshabilitarse
-- Cada ítem en el carro debe tener un `action button` para remover el ítem del carro.
-- Los items en el carrito se deben de agrupar mostrando cantidad de cada producto añadido.
+This is the current landing page were you can see the list of products that were consumed by the API
+![product.png](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/product.png?raw=true)
 
-#### Puntos extras:
+# Product details
 
-- Mostrar el rating y número de reviews en el PLP y PDP
-- Usar Redux para mantener el estado global.
-- Mantener info de ítems en carrito al recargar la página
+Clicking in the details button opens a new view were you can see the current prices, description & info about the product. The info shown in the screen is feeded by the product API. 
+![details.png](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/details.png?raw=true)
 
-#### Notas
+# Product search
 
-- Recuerda la filosofía "Mobile-First Responsive Design".
-- Piensa en otras tiendas en linea que hayas usado. El publico final no es necesariamente alguien muy tecnico.
-- Si no utilizas el API local tu prueba será descartada.
+There is 2 ways to search.
 
-## Reglas de entrega
+Searching By ID
 
-1. Documenta la resolución de tu problema en un un archivo BITACORA.md, además, indica detalladamente cómo instalar las dependencias o archivos necesarios para correr tu aplicación.
+![Search by id.png]([https://your-copied-image-address](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/Search%20by%20id.png?raw=true)
 
-2. Es necesario que garantices que tu aplicación pueda correr en la máquina de otra persona.
+The Searching by id function works with the ID's assigned in the API to the product
 
-3. Sube tu respuesta a un repositorio en una cuenta tuya de GitHub, GitLab o BitBucket y da acceso a `kbarcelo@ecomsur.com, ecervantes@ecomsur.com, olepage@ecomsur.com` y posiblemente a otros correos que te pida RRHH
+Searching by name
 
-## ¡Mucho éxito! 💪
+![search by name.png](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/search%20by%20name.png?raw=true)
+
+The search function filters the keywords pressed.
+
+# Shopping cart
+
+The number of the items in the shopping cart icon updates whenever the user adds a new item
+
+![cart items.png](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/cart%20items.png?raw=true)
+
+When the shopping cart icon is pressed it opens a new view where it shows the current items in it. 
+
+Empty
+
+![empty cart.png](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/empty%20cart.png?raw=true)
+
+Full
+
+![cart full.png](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/cart%20full.png?raw=true)
+
+
+
+If a product isn't in stock it shows a label of 'unaivalaible'  Again, the stock control is feed by the API. 
+
+![no stock.png](https://github.com/GustavoCodesAgain/FrontEndTest/blob/main/SS/no%20stock.png?raw=true)
+

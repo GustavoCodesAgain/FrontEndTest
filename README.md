@@ -32,7 +32,7 @@
 
 ## Run the aplication
 
-1. Execute in terminal the dev command 'npm run dev' 
+1. Execute in terminal the dev command `npm run dev` 
 
 After completing the aboce steps a browser window will open using the CRA APP located in `http://localhost:3000/`
 
